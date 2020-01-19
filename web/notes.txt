@@ -1,0 +1,52 @@
+//JSX é JavaScript com HTML(XML)
+
+==============================================================================================
+//Pra escrever js dentro do html coloque chaves
+
+==============================================================================================
+//Usar <> vazio sem ser o <div> que é o que normalmente se usaria é melhor pois assim não 
+//corremos risco pois essa div apareceria no html e poderia quebrar a formatação. Fragments o
+//nome dessa prática.
+    --Exemplo de uso:
+    function App() {
+    return (
+        <>
+        <Header title="Dashboard"/>
+        <Header title="Dashboard 2"/>
+        <Header title="Dashboard 3"/>
+        </>
+    );
+    }
+
+==============================================================================================
+-----Conceitos básicos do React-----
+//Componente -> Função que retorna html ou algo relacionado ao visual. Elementos repetitivos a
+//serem exibidos são um exemplo. Bloco isolado de HTML, CSS E JS o qual não interfere no
+//restante da aplicação.
+
+//Propriedade -> Informações que um componente PAI passa para o componente filho.
+
+//Estado -> Informações mantidas pelo componente (Lembrar: imutabilidade)
+
+==============================================================================================
+----Exemplo de contador----
+//, {} pra importar algo a mais
+import React, {useState} from 'react';
+
+
+function App() {
+  //useState vai retornar uma variavel(counter) e uma função que atualiza o valor do counter 
+  const [counter, setCounter] = useState(0);
+
+  function incrementCounter(){
+    //Imutabilidade é algo presente no React. Não alteramos nenhuma dados, criamos um dado novo a partir
+    //do valor anterior
+     setCounter (counter + 1);
+  }
+  return (
+    <>
+      <h1>Contador: {counter}</h1>
+      <button onClick={incrementCounter}>Incrementar</button>
+    </>
+  );
+}

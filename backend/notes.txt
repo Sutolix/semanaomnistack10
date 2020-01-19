@@ -1,0 +1,21 @@
+-----Resumo básico dos metodos
+//get -> quando queremos receber uma informação
+//post -> para criar alguma informação
+//put -> quando queremos editar um recurso
+//delete -> deletar informações
+
+-----Tipos de parâmetros:
+//Query Params: request.query (filtro, ordenação, paginação, ...)
+//Route Params: request.params (identificar um recurso na alteração ou remoção)
+//Body: request.body (dados para crianção ou alteração de um registro)
+
+-----Funções de um controller
+//index, show, store, update e destroy
+
+-----Requisições HTTP:
+GET, POST, PUT, DELETE
+
+Requisição do frontend -> Consulta no backend -> Resposta do backend
+-Porém assim, se o backend quiser mandar algo para o frontend sem ter recebido 
+uma requisição é impossivel. Por isso usamos Protocolo WebSocket. Exemplo: Em
+aplicações em Real Time.
