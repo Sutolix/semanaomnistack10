@@ -1,1 +1,1 @@
-Projeto desenvolvido pela Rockeatseat na semana Omnistack 10ª edição.
+## Projeto desenvolvido pela Rockeatseat na semana Omnistack 10ª edição.
