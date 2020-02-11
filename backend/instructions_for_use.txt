@@ -1,8 +1,0 @@
-1 - yarn add express
-2 - yarn add nodemon -D
-3 - yarn add mongoose
-4 - yarn add axios
-5 - yarn add cors
-
-####BACK-END RUN####
-Terminal -> yarn dev
