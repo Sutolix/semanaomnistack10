@@ -19,8 +19,6 @@
 
 **Mobile**
 
-*Para iniciar um novo projeto:*
-
 *Instale o Expo*
 - `yarn global add expo-cli`
 
